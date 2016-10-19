@@ -4,7 +4,7 @@ Theme URI: https://github.com/Vtrois/Snape
 Author: Vtrois
 Author URI: https://www.vtrois.com/
 Description: A magical theme for WordPress
-Version: 1.0.0
+Version: 1.0.1
 License: Mozilla Public License Version 2.0
 Tags: black, white, blue, two-columns, right-sidebar
 */
@@ -25,7 +25,7 @@ body {
     background: #fff;
     font-weight: 300;
     font-size: 14px;
-    font-family: Din,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,sans-serif;
+    font-family: Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,sans-serif;
     line-height: 24px
 }
 
@@ -43,11 +43,11 @@ a:hover {
     text-decoration: underline
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5 {
     margin: 0 0 30px;
     color: #5a5a5a;
     font-weight: 400;
-    font-family: Din,Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif
+    font-family: Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif;
 }
 
 p {
@@ -69,7 +69,11 @@ ol,p,ul {
     margin-bottom: 1em;
     color: #333;
     font-size: 1pc;
-    font-family: Din,Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif
+    font-family: Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif;
+}
+
+.container span,footer p,#navbar-menu li {
+    font-family: Din,Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif;
 }
 
 cite {
@@ -410,7 +414,7 @@ ul.cart-list>li.total>.btn {
 @media (max-width:992px) {
     nav.navbar .navbar-brand {
         position: relative;
-        top: -2px;
+        top: 0px;
         margin-top: 0
     }
 
@@ -654,7 +658,6 @@ nav.navbar-inverse.navbar-full .navbar-toggle {
 .pageheader {
     margin-top: 5pc;
     padding: 70px 0;
-    background-color: #333
 }
 
 .pageheader .white {
@@ -684,7 +687,8 @@ nav.navbar-inverse.navbar-full .navbar-toggle {
 
 @media screen and (max-width:992px) {
     .pageheader {
-        margin-top: 38pt
+        margin-top: 38pt;
+        padding: 60px 0;
     }
 }
 
@@ -1285,6 +1289,10 @@ a.list-group-item:focus,a.list-group-item:hover,button.list-group-item:focus,but
 .post-section .post-inner .post-content p {
     color: #000;
     font-size: 1pc
+}
+
+.post-section .post-inner .post-content ul {
+    margin-left: -16px;
 }
 
 @media screen and (max-width:992px) {

@@ -35,9 +35,10 @@ Snape/
 │   ├── smilies(has some emoji pic)
 │   ├── 404.png
 │   ├── arrow.png
-│   ├── default.png
+│   ├── default.jpg
 │   ├── error.png
 │   ├── fingerprint.png
+│   ├── dark-wall.png
 │   ├── cd-top-arrow.svg
 │   └── licenses.png
 ├── inc/

@@ -1,6 +1,6 @@
 <?php
 
-define( 'SNAPE_VERSION' , '1.0.0' );
+define( 'SNAPE_VERSION' , '1.0.1' );
 require_once( get_template_directory() . '/inc/widgets.php');
 
 /**
@@ -11,7 +11,7 @@ require_once( get_template_directory() . '/inc/widgets.php');
 require_once( get_template_directory() . '/inc/version.php' );
 $snape_update_checker = new ThemeUpdateChecker(
 	'Snape', 
-	'http://soft.vtrois.com/wordpress/theme/snape/upgrade.json'
+	'https://soft.vtrois.com/wordpress/theme/snape/upgrade.json'
 );
 
 /**
@@ -653,7 +653,7 @@ function snape_blog_thumbnail() {
     if ( has_post_thumbnail() ) {
         echo '<a href="'.get_permalink().'"><img class="snape-thumb" src="'.$img_url.'" /></a>';  
     } else {
-        echo '<a href="'.get_permalink().'"><img class="snape-thumb" src="'. get_template_directory_uri().'/images/default.png" /></a>';  
+        echo '<a href="'.get_permalink().'"><img class="snape-thumb" src="'. get_template_directory_uri().'/images/default.jpg" /></a>';  
     }  
 }  
 add_filter( 'add_image_size', create_function( '', 'return 1;' ) );

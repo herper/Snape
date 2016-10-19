@@ -159,7 +159,7 @@ class snape_widget_tags extends WP_Widget {
 
     function form($instance){
         global $wpdb;
-        $instance = wp_parse_args((array) $instance, array('title'=>'Tags','number'=>'20','orderby'=>'count','order'=>'RAND'));
+        $instance = wp_parse_args((array) $instance, array('title'=>'聚合标签','number'=>'20','orderby'=>'count','order'=>'RAND'));
         $title =  esc_attr($instance['title']);
         $number = intval($instance['number']);
         $orderby =  esc_attr($instance['orderby']);

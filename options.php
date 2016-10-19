@@ -120,6 +120,7 @@ function optionsframework_options() {
 		'name' => '顶部图片',
 		'desc' => '选择顶部图片，当上传顶部图片时，将自动覆盖顶部颜色',
 		'id' => 'banner_image',
+		'std' => get_template_directory_uri() . '/images/dark-wall.png',
 		'type' => 'upload');
 	$options[] = array(
 		'name' => '版权声明',
@@ -166,6 +167,7 @@ function optionsframework_options() {
 		'name' => '顶部图片',
 		'desc' => '选择顶部图片，当上传顶部图片时，将自动覆盖顶部颜色',
 		'id' => 'page_banner_image',
+		'std' => get_template_directory_uri() . '/images/dark-wall.png',
 		'type' => 'upload');
 	$options[] = array(
 		'name' => '版权声明',
